@@ -17,7 +17,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 13vw 2fr 1fr 13vw;
-  grid-template-rows: 1.5fr 80px 4fr 2fr;
+  grid-template-rows: 1.4fr 80px 4fr 2fr;
   grid-template-areas:
     "header header header header"
     ". nav nav ."
@@ -151,6 +151,7 @@ p {
   margin-bottom: 3rem;
 }
 
+.main > p,
 .article > p {
   margin-bottom: 1.2rem;
 }
@@ -197,3 +198,30 @@ figcaption {
 .footer-logo {
   margin-bottom: 2.5rem;
 }
+
+/*------------------LIABILITY RELEASE--------------------*/
+
+.liability-release-container {
+  display: grid;
+  grid-template-columns: 13vw 1fr 13vw;
+  grid-template-rows: .9fr 80px 3.5fr 1.3fr;
+  grid-template-areas:
+    "header header header"
+    ". nav ."
+    ". main ."
+    "footer footer footer";
+  }
+
+  .liability-release-container::before {
+    content: "";
+    background-color: #ebebeb;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .liability-release-container::after {
+    content: "";
+    background-color: #ebebeb;
+    grid-column: 3;
+    grid-row: 2;
+  }
