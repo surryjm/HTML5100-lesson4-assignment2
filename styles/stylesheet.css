@@ -8,6 +8,25 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 body {
   color: #393939;
   font-size: 16px;
@@ -119,6 +138,8 @@ footer li + li:before,
 nav li + li:before {
   content: "/";
   margin: 0 10px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .nav-text {
@@ -128,7 +149,8 @@ nav li + li:before {
 }
 
 h2 {
-  color: #2C9AB7;
+  /*color: #2C9AB7;*/
+  color: #1C6073;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
 }
@@ -145,7 +167,7 @@ p {
 
 .blockquote {
   margin-left: 0;
-  color: #2C9AB7;
+  color: #1C6073;
   font-size: 1.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -167,13 +189,15 @@ figcaption {
 
 .aside-links {
   display: block;
-  color: #2C9AB7;
+  color: #1C6073;
   margin-top: 1.2rem;
   margin-bottom: 2rem;
+  text-decoration: underline;
 }
 
 .main-links {
-  color: #2C9AB7;
+  color: #1C6073;
+  text-decoration: underline;
 }
 
 .footer ul {
